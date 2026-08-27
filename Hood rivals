@@ -1,39 +1,3 @@
-if not game:IsLoaded() then game.Loaded:Wait() end
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
-local Window = Rayfield:CreateWindow({
-Name = "💀 Hood Rivals | Demon Executioners",
-Icon = 0,
-LoadingTitle = "Hood Rivals Hub",
-LoadingSubtitle = "by Demon Executioners",
-Theme = "Default",
-ConfigurationSaving = {
-Enabled = true,
-FolderName = "MeuSuperHub",
-FileName = "Configuracoes"
-},
-KeySystem = false,
-})
-local Players          = game:GetService("Players")
-local LocalPlayer      = Players.LocalPlayer
-local Camera           = workspace.CurrentCamera
-local RunService       = game:GetService("RunService")
-local RS               = game:GetService("ReplicatedStorage")
-local Teams            = game:GetService("Teams")
-local REAL_NAME         = LocalPlayer.Name
-local REAL_DISPLAY_NAME = LocalPlayer.DisplayName
--- secret handshake value stored on the player so other script users can detect each other
-local DEMON_TAG_KEY   = "DemonExecutioners_v55"
-local DEMON_TAG_VALUE = "active"
-local rapidFireEnabled    = false
-local noRecoilEnabled     = false
-local hitboxEnabled       = false
-local hitboxSize          = 5
-local hitboxTarget        = "Head"
-local hitboxTransparency  = 0.5
-local espEnabled          = false
-local espFillTransparency = 0.5
-local espOutlineTransparency = 0
-local RAPID_FIRE_RATE        = 0.01
 local originalValues         = {}
 local originalSizes          = {}
 local originalTransparencies = {}
